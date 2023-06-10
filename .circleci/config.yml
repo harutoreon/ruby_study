@@ -7,4 +7,5 @@ jobs:
     steps:
       - checkout
       - run:
-          command: ruby test/fizz_buzz_test.rb
+          name: test/ 内の全ファイルを実行
+          command: ruby test/*
