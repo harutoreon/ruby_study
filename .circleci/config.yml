@@ -1,0 +1,11 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:3.1.0
+    steps:
+      - checkout
+      - run:
+          name: test/ 内の全ファイルを実行
+          command: ruby test/*
