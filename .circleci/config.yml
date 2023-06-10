@@ -7,4 +7,4 @@ jobs:
     steps:
       - checkout
       - run:
-          command: ruby --version
+          command: ruby test/fizz_buzz_test.rb
