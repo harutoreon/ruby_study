@@ -7,5 +7,4 @@ jobs:
     steps:
       - checkout
       - run:
-          name: test/ 内の全ファイルを実行
-          command: ruby test/*
+          command: rake
