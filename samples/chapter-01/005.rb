@@ -10,3 +10,4 @@ puts a, b, c
 billion = 1_000_000_000
 
 puts billion
+#=> 1000000000
