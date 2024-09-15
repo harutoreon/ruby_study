@@ -1,5 +1,5 @@
-FROM ruby:3.3.4
+FROM ruby:3.3.4-alpine
 
-WORKDIR /samples/chapter-02
+WORKDIR /samples/chapter-03
 
-CMD [ "bash" ]
+CMD [ "ash" ]
