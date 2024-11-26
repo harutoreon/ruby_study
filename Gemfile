@@ -2,5 +2,14 @@
 
 source "https://rubygems.org"
 
-gem 'gimei'
-gem 'faker'
+group :development do
+  gem 'debug'
+end
+
+group :production do
+  gem 'gimei'
+end
+
+group :test do
+  gem 'faker'
+end
