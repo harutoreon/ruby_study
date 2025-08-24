@@ -24,3 +24,19 @@ SQLite3::Database.new('test.db') do |db|
     p row
   end
 end
+
+SQLite3::Database.new('test.db') do |db|
+  p db.execute('SELECT * FROM users where id = 5')
+
+  db.execute("UPDATE users SET email = 'Bob@example.com' WHERE id = 5")
+  
+  p db.execute('SELECT * FROM users where id = 5')
+end
+
+SQLite3::Database.new('test.db') do |db|
+  p db.execute('SELECT * FROM users')
+
+  db.execute("DELETE FROM users WHERE id = 5")
+
+  p db.execute('SELECT * FROM users')
+end
