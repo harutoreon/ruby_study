@@ -1,7 +1,7 @@
 ARG RUBY_VERSION=3.3.4
-FROM ruby:$RUBY_VERSION-alpine3.19
+FROM ruby:$RUBY_VERSION
 
-ARG WORKING_DIRECTORY="chapter-09"
-WORKDIR /samples/$WORKING_DIRECTORY
+# ARG WORKING_DIRECTORY="chapter-19"
+WORKDIR /samples
 
-CMD [ "ash" ]
+CMD [ "bash" ]
